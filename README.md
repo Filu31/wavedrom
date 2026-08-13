@@ -1,12 +1,15 @@
-[![CI](https://github.com/wavedrom/wavedrom/actions/workflows/ci.yml/badge.svg)](https://github.com/wavedrom/wavedrom/actions/workflows/ci.yml)
-[![NPM version](https://img.shields.io/npm/v/wavedrom.svg)](https://www.npmjs.org/package/wavedrom)
-<span class="badge-paypal"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=J6WR5E7TJGSY2&lc=US&item_name=WaveDrom&item_number=github&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a></span>
-[![Coverage Status](https://coveralls.io/repos/github/wavedrom/wavedrom/badge.svg?branch=trunk)](https://coveralls.io/github/wavedrom/wavedrom?branch=trunk)
+This is a forked version of Wavedrom for enhancements
 
-<!-- [![Dependency Status](https://david-dm.org/wavedrom/wavedrom.svg)](https://david-dm.org/wavedrom/wavedrom) -->
-<!-- [![Analytics](https://ga-beacon.appspot.com/UA-21660728-4/wavedrom/readme)](http://wavedrom.com) -->
+### PCART additions:
 
-[EDITOR](http://wavedrom.com/editor.html) | [TUTORIAL](http://wavedrom.com/tutorial.html)
+ * usersvg: feature to enter raw svg code that will be rendered 'as is' in reszulting wavedrom picture
+ * signal/data font size: feature to set the text font size for lane marks
+   - inherent trick: set a label in data array with: ['tspan', {'font-size': '#custom-size', stroke:'black', fill:'black', 'stroke-width':0.3}, 'label']
+	exemple:
+	data: ['S_IDLE', ['tspan', {'font-size': '6', stroke:'black', fill:'black', 'stroke-width':0.3}, 'S_COMPUTE_CRC'], 'S_DVAL_UP', 'S_SHIFTING','S_INTER_FRAME','S_IDLE']},
+	
+
+[EDITOR](https://filu31.github.io/wavedrom/editor.html) | [TUTORIAL](http://filu31.github.io/wavedrom/tutorial.html)
 
 ## Introduction
 
