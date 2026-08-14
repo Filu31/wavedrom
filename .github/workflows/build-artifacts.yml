@@ -1,14 +1,7 @@
 name: Build and artifacts
 
 on:
-  push:
-    branches: [ trunk, main ]
-    tags:
-      - 'v*'
-  pull_request:
-    branches: [ trunk, main ]
-  release:
-    types: [created]
+  workflow_dispatch:
 
 jobs:
   build:
